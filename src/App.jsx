@@ -13,7 +13,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Home />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Works />
       <Services />
