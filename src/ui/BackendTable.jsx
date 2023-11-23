@@ -5,6 +5,7 @@ import { DiMongodb, DiNodejs } from "react-icons/di";
 import { IoServerSharp } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { LiaDocker } from "react-icons/lia";
+import { SiPostman } from "react-icons/si";
 
 function BackendTable() {
   return (
@@ -37,6 +38,12 @@ function BackendTable() {
             <LiaDocker color="#3440a8" />
           </div>
           <div className="description">Docker</div>
+        </div>
+        <div className="box">
+          <div className="icon">
+            <SiPostman color="#f54900" />
+          </div>
+          <div className="description">Postman</div>
         </div>
       </SkillContainer>
     </Side>

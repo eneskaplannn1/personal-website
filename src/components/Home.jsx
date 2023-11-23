@@ -46,7 +46,7 @@ function Home() {
         </button>
       </div>
       <div className="image">
-        <img src="main.jpg" />
+        <img src="me3.jpg" />
       </div>
     </StyledHomePage>
   );
@@ -151,7 +151,8 @@ const StyledHomePage = styled.div`
 
   .image {
     img {
-      width: 350px;
+      width: 400px;
+      height: auto;
       border-radius: 50%;
       height: auto;
     }

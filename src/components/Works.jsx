@@ -21,17 +21,17 @@ function Works() {
         <Swiper
           modules={[Pagination]}
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={2}
           grabCursor={true}
           // onSwiper={(swiper) => console.log(swiper)}
           // onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
             <div className="projects__content">
-              <img className="projects__img" src="tradehub2.png" />
+              <img className="projects__img" src="eduprotrack1.png" />
               <div>
-                <span className="projects__subtitle">web</span>
-                <h1 className="projects__title">E-Commerce Application</h1>
+                <span className="projects__subtitle">web - EduProTrack</span>
+                <h1 className="projects__title">School Management System</h1>
                 <a
                   href="https://tradehub-e-commerce.netlify.app/"
                   className="projects__button"
@@ -43,54 +43,9 @@ function Works() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="projects__content">
-              <img className="projects__img" src="main.jpg" />
-              <div>
-                <span className="projects__subtitle">web</span>
-                <h1 className="projects__title">E-Commerce Application</h1>
-                <a
-                  href="https://eduprotrack.netlify.app/"
-                  className="projects__button"
-                >
-                  View Demo <IoIosArrowRoundForward />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="projects__content">
               <img className="projects__img" src="tradehub3.png" />
               <div>
-                <span className="projects__subtitle">web</span>
-                <h1 className="projects__title">E-Commerce Application</h1>
-                <a
-                  href="https://eduprotrack.netlify.app/"
-                  className="projects__button"
-                >
-                  View Demo <IoIosArrowRoundForward />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="projects__content">
-              <img className="projects__img" src="tradehub4.png" />
-              <div>
-                <span className="projects__subtitle">web</span>
-                <h1 className="projects__title">E-Commerce Application</h1>
-                <a
-                  href="https://eduprotrack.netlify.app/"
-                  className="projects__button"
-                >
-                  View Demo <IoIosArrowRoundForward />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="projects__content">
-              <img className="projects__img" src="eduprotrack1.png" />
-              <div>
-                <span className="projects__subtitle">web</span>
+                <span className="projects__subtitle">web - TradeHub</span>
                 <h1 className="projects__title">E-Commerce Application</h1>
                 <a
                   href="https://eduprotrack.netlify.app/"
@@ -127,6 +82,7 @@ const Header = styled.div`
     color: #777;
   }
 `;
+
 const Main = styled.div`
   overflow: initial;
 
@@ -137,6 +93,7 @@ const Main = styled.div`
 
   .projects__img {
     width: 400px;
+    height: auto;
     border-radius: 0.75rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
