@@ -16,14 +16,12 @@ import { HiOutlineServerStack } from "react-icons/hi2";
 import { FaReact } from "react-icons/fa";
 import { RxComponent1 } from "react-icons/rx";
 import { DiResponsive } from "react-icons/di";
+import Heading from "../ui/Heading";
 
 function Services() {
   return (
     <StyledServices id="services">
-      <Header>
-        <h2>My Services</h2>
-        <h4>What i offer</h4>
-      </Header>
+      <Heading title="My Services" subTitle="What i offer" />
       <Main>
         <Swiper
           modules={[Pagination]}
@@ -121,21 +119,6 @@ const StyledServices = styled.div`
   height: 100vh;
 
   padding: 0 5rem;
-`;
-
-const Header = styled.div`
-  text-align: center;
-  width: 100%;
-
-  padding: 2rem 0;
-
-  h2 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-weight: 400;
-    color: #777;
-  }
 `;
 
 const Main = styled.div`

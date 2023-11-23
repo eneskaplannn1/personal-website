@@ -84,6 +84,7 @@ const StyledNavbar = styled.nav`
 
     li {
       font-size: 30px;
+      cursor: pointer;
     }
   }
 `;

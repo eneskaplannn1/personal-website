@@ -9,14 +9,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { styled } from "styled-components";
+import Heading from "../ui/Heading";
 
 function Works() {
   return (
     <StyledWorks id="works">
-      <Header>
-        <h2>My Projects</h2>
-        <h4>Most recent work</h4>
-      </Header>
+      <Heading title="My Projects" subTitle="Most recent works" />
       <Main>
         <Swiper
           modules={[Pagination]}
@@ -65,22 +63,6 @@ function Works() {
 const StyledWorks = styled.div`
   width: 100vw;
   height: 100vh;
-`;
-
-const Header = styled.div`
-  padding: 2rem 0;
-  margin-bottom: 2rem;
-  width: 100%;
-
-  text-align: center;
-
-  h2 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-weight: 400;
-    color: #777;
-  }
 `;
 
 const Main = styled.div`
