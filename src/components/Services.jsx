@@ -25,85 +25,87 @@ function Services() {
       <Main>
         <Swiper
           modules={[Pagination]}
-          spaceBetween={200}
-          slidesPerView={3}
+          spaceBetween={0}
+          slidesPerView={2}
           grabCursor={true}
           className="container"
         >
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <FaReact />
                 <h4> Application Development with React</h4>
               </div>
-              <div className="services__description">
+              <div className="services-description">
                 I have the ability to use React to create modern and
                 user-friendly interfaces.
               </div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <RxComponent1 />
                 <h4> Component Based Development</h4>
               </div>
-              <div className="services__description">
+              <div className="services-description">
                 I can create modular and reusable React components when
                 developing applications.
               </div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <DiResponsive />
                 <h4> Responsive Design</h4>
               </div>
-              <div className="services__description">
+              <div className="services-description">
                 I can create responsive designs suitable for mobile and desktop
                 devices.
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <IoCodeSlashOutline />
                 <h4> Web-site design</h4>
               </div>
-              <div className="services__description"></div>
+              <div className="services-description"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <GiWireframeGlobe />
                 <h4> Designing RESTful API's</h4>
               </div>
-              <div className="services__description">
+              <div className="services-description">
                 I am experienced in the development of RESTful APIs.
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <GoDatabase />
                 <h4>Database Management</h4>
               </div>
-              <div className="services__description">
+              <div className="services-description">
                 I have the ability to work with databases like MongoDB.
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="services__content">
-              <div className="services__head">
+            <div className="services-content">
+              <div className="services-head">
                 <HiOutlineServerStack />
                 <h4>Design server-side Applications</h4>
               </div>
-              <div className="services__description">
+              <div className="services-description">
                 I can develop server-side applications using Node.js.
               </div>
             </div>
@@ -122,12 +124,12 @@ const StyledServices = styled.div`
 `;
 
 const Main = styled.div`
-  .projects__content {
+  .projects-content {
     display: grid;
     justify-content: center;
   }
 
-  .services__content {
+  .services-content {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -135,11 +137,20 @@ const Main = styled.div`
     width: 400px;
     height: 400px;
 
-    border-radius: 40%;
+    border-radius: 7.75rem;
     padding: 2rem;
   }
-
-  .services__head {
+  .services-border {
+    width: 450px;
+    height: 450px;
+    border: 1.8px solid black;
+    border-radius: 7.75rem;
+    position: absolute;
+    inset: 0;
+    left: -10px;
+    margin: auto;
+  }
+  .services-head {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +166,7 @@ const Main = styled.div`
     }
   }
 
-  .services__description {
+  .services-description {
     text-align: center;
     line-height: 36px;
   }

@@ -20,7 +20,6 @@ export default Skills;
 const StyledSkills = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #f7f7f7;
 `;
 
 const Main = styled.div`
