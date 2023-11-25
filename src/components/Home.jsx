@@ -6,9 +6,14 @@ function Home() {
   const [className, setClassName] = useState("text-animate");
   const myName = ["H", "i", ",", "I", "'", "m", " ", "E", "n", "e", "s"];
   const jobArray = [
+    "S",
+    "o",
+    "f",
+    "t",
     "w",
+    "a",
+    "r",
     "e",
-    "b",
     " ",
     "d",
     "e",
@@ -19,7 +24,6 @@ function Home() {
     "p",
     "e",
     "r",
-    ".",
   ];
 
   useEffect(() => {

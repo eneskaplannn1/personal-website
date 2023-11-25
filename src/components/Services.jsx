@@ -23,13 +23,7 @@ function Services() {
     <StyledServices id="services">
       <Heading title="My Services" subTitle="What i offer" />
       <Main>
-        <Swiper
-          modules={[Pagination]}
-          spaceBetween={0}
-          slidesPerView={2}
-          grabCursor={true}
-          className="container"
-        >
+        <Swiper modules={[Pagination]} slidesPerView={3} grabCursor={true}>
           <SwiperSlide>
             <div className="services-content">
               <div className="services-head">
@@ -66,6 +60,7 @@ function Services() {
                 I can create responsive designs suitable for mobile and desktop
                 devices.
               </div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -75,6 +70,7 @@ function Services() {
                 <h4> Web-site design</h4>
               </div>
               <div className="services-description"></div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -86,6 +82,7 @@ function Services() {
               <div className="services-description">
                 I am experienced in the development of RESTful APIs.
               </div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -97,6 +94,7 @@ function Services() {
               <div className="services-description">
                 I have the ability to work with databases like MongoDB.
               </div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -108,6 +106,7 @@ function Services() {
               <div className="services-description">
                 I can develop server-side applications using Node.js.
               </div>
+              <div className="services-border"></div>
             </div>
           </SwiperSlide>
         </Swiper>
@@ -124,32 +123,63 @@ const StyledServices = styled.div`
 `;
 
 const Main = styled.div`
+  transition: all 10s ease;
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 430px;
+  }
+
   .projects-content {
     display: grid;
     justify-content: center;
   }
 
   .services-content {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    background-color: #e6e6e6;
+
     display: flex;
     flex-direction: column;
+
     gap: 0.3rem;
-    background-color: #e6e6e6;
     width: 400px;
     height: 400px;
 
     border-radius: 7.75rem;
     padding: 2rem;
+
+    &:hover {
+      svg {
+        transition-duration: 1s;
+        transform: rotateY(360deg);
+      }
+    }
   }
+
   .services-border {
-    width: 450px;
-    height: 450px;
-    border: 1.8px solid black;
-    border-radius: 7.75rem;
     position: absolute;
+    width: 420px;
+    height: 420px;
+
     inset: 0;
     left: -10px;
-    margin: auto;
+    top: -10px;
+
+    border: 3px solid black;
+    border-radius: 200px;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
+
   .services-head {
     display: flex;
     flex-direction: column;
