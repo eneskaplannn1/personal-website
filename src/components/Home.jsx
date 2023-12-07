@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { styled } from "styled-components";
 import AnimatedLetters from "../ui/AnimatedLetters";
 
 import { easeInOut, motion } from "framer-motion";
@@ -41,7 +40,7 @@ function Home() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: easeInOut }}
-      className="w-screen section-height "
+      className="overflow-x-hidden max-w-screen section-height "
       id="home"
     >
       <div className="max-w-[1400px] mx-auto py-40 grid grid-cols-[2fr,1fr] gap-x-8">

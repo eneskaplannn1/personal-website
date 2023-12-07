@@ -1,41 +1,72 @@
-// import Swiper core and required modules
-import { Pagination } from "swiper/modules";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import { motion } from "framer-motion";
 
 function Works() {
   return (
-    <section className="py-12 section-height" id="works">
-      <div className="max-w-5xl mx-auto space-y-12">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="py-12 section-height"
+      id="works"
+    >
+      <div className="max-w-5xl mx-auto space-y-24">
         <h1 className="header">My Projects</h1>
 
-        <div className="grid grid-cols-2 gap-16">
-          <div className="flex relative flex-col shadow-2xl w-[480px] h-80  rounded-2xl">
-            <img className="w-full h-full rounded-2xl" src="eduprotrack1.png" />
-            <div className="absolute  inset-0 z-10 hover:block rounded-2xl space-y-6 to-[#001b5e] font-bold text-white hover:bg-gradient-to-r from-gray-200 group">
-              <h3 className="text-2xl">School Management System</h3>
-              <p className="text-xl text-primary ">ReactJS , NodeJS</p>
+        <div className="grid grid-cols-2 gap-16 ">
+          <div className="flex relative flex-col hover:shadow-2xl  w-[480px] h-80 group hover:bg-gradient-to-r  from-gray-200 to-[#001b5e]  rounded-2xl">
+            <img
+              className="w-full h-full rounded-2xl group-hover:opacity-10"
+              src="tradehub3.png"
+            />
+            <div className="card">
+              <h3 className="text-3xl tracking-wider ">
+                School Management System
+              </h3>
+              <p className="py-4 text-xl ">ReactJS , NodeJS</p>
               <button className="bg-indigo-600 btn">More info</button>
             </div>
           </div>
-          <div className="flex flex-col shadow-2xl w-[480px] h-80  rounded-2xl">
-            <img className="w-full h-full rounded-2xl" src="tradehub3.png" />
+          <div className="flex relative flex-col hover:shadow-2xl  w-[480px] h-80 group hover:bg-gradient-to-r  from-gray-200 to-[#001b5e]  rounded-2xl">
+            <img
+              className="w-full h-full rounded-2xl group-hover:opacity-10"
+              src="tradehub3.png"
+            />
+            <div className="card">
+              <h3 className="text-3xl tracking-wider ">
+                School Management System
+              </h3>
+              <p className="py-4 text-xl ">ReactJS , NodeJS</p>
+              <button className="bg-indigo-600 btn">More info</button>
+            </div>
           </div>
-          <div className="flex flex-col shadow-2xl w-[480px] h-80  rounded-2xl">
-            <img className="w-full h-full rounded-2xl" src="eduprotrack1.png" />
+          <div className="flex relative flex-col hover:shadow-2xl  w-[480px] h-80 group hover:bg-gradient-to-r  from-gray-200 to-[#001b5e]  rounded-2xl">
+            <img
+              className="w-full h-full rounded-2xl group-hover:opacity-10"
+              src="eduprotrack1.png"
+            />
+            <div className="card">
+              <h3 className="text-3xl tracking-wider ">
+                School Management System
+              </h3>
+              <p className="py-4 text-xl ">ReactJS , NodeJS</p>
+              <button className="bg-indigo-600 btn">More info</button>
+            </div>
           </div>
-          <div className="flex flex-col shadow-2xl w-[480px] h-80  rounded-2xl">
-            <img className="w-full h-full rounded-2xl" src="tradehub3.png" />
+          <div className="flex relative flex-col hover:shadow-2xl  w-[480px] h-80 group hover:bg-gradient-to-r  from-gray-200 to-[#001b5e]  rounded-2xl">
+            <img
+              className="w-full h-full rounded-2xl group-hover:opacity-10"
+              src="eduprotrack1.png"
+            />
+            <div className="card">
+              <h3 className="text-3xl tracking-wider ">
+                School Management System
+              </h3>
+              <p className="py-4 text-xl ">ReactJS , NodeJS</p>
+              <button className="bg-indigo-600 btn">More info</button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

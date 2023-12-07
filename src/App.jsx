@@ -18,7 +18,6 @@ function App() {
       <Skills />
       <Works />
       <Services />
-
       <ContactMe />
       <Footer />
     </>
