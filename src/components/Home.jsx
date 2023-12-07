@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import AnimatedLetters from "../ui/AnimatedLetters";
 
+import { easeInOut, motion } from "framer-motion";
+
 function Home() {
   const [className, setClassName] = useState("text-animate");
   const myName = ["H", "i", ",", "I", "'", "m", " ", "E", "n", "e", "s"];
@@ -35,10 +37,16 @@ function Home() {
   }, []);
 
   return (
-    <StyledHomePage id="home">
-      <div className="container">
-        <div className="about-content">
-          <h1>
+    <motion.main
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: easeInOut }}
+      className="w-screen section-height "
+      id="home"
+    >
+      <div className="max-w-[1400px] mx-auto py-40 grid grid-cols-[2fr,1fr] gap-x-8">
+        <div className="relative px-16 py-8 space-y-8 before:font-laBerra after:font-laBerra before:content-['<body>'] before:text-primary before:text-4xl before:absolute  before:-left-8 before:-top-8 before:opacity-75 after:content-['</body>'] after:text-primary after:text-4xl after:absolute  after:-left-8 after:-bottom-8 after:opacity-75">
+          <h1 className="relative font-sans text-5xl font-medium py-16 mb-4 text-black before:content-['<h1>'] before:text-primary before:font-laBerra after:font-laBerra before:text-4xl before:absolute before:z-10 before:-top-1 before:-left-16 before:opacity-80 after:content-['</h1>'] after:text-primary after:text-4xl after:absolute after:z-10 after:-bottom-4 after:-left-16 after:opacity-80">
             <AnimatedLetters
               strArray={myName}
               idx={1}
@@ -51,120 +59,16 @@ function Home() {
               letterClass={className}
             />
           </h1>
-          <button>
+          <button className="text-xl transition duration-300 btn bg-primary hover:-translate-y-3 ">
             <a href="enesbaba">Download resume</a>
           </button>
         </div>
-        <div className="image">
-          <img src="me3.jpg" />
+        <div>
+          <img src="me3.jpg" className="rounded-full" />
         </div>
       </div>
-    </StyledHomePage>
+    </motion.main>
   );
 }
 
 export default Home;
-
-const StyledHomePage = styled.div`
-  width: 100vw;
-  height: calc(100vh - 5rem);
-
-  padding: 5rem 3rem;
-
-  .container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: center;
-    column-gap: 2rem;
-
-    .about-content {
-      margin-left: 4rem;
-      position: relative;
-
-      h1 {
-        color: #000;
-        font-size: 56px;
-        line-height: 100px;
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        position: relative;
-        padding: 1rem;
-
-        margin-bottom: 3.5rem;
-
-        &:before {
-          content: "<h1>";
-          font-family: "La Belle Aurore", cursive;
-          color: #e55305;
-          font-size: 30px;
-          position: absolute;
-          margin-top: -70px;
-          left: -25px;
-          opacity: 0.8;
-        }
-
-        &:after {
-          content: "</h1>";
-          font-family: "La Belle Aurore", cursive;
-          color: #e55305;
-          font-size: 30px;
-          margin-right: 10px;
-          bottom: -70px;
-          left: -25px;
-          position: absolute;
-          opacity: 0.8;
-        }
-      }
-      button {
-        padding: 1rem;
-        font-weight: 300;
-        font-size: 1.3rem;
-
-        border-radius: 12px;
-
-        transition: background 0.4s, color 0.4s;
-
-        background-color: white;
-        color: #c95a1e;
-        border: 1px solid #c95a1e;
-
-        &:hover {
-          background-color: #c95a1e;
-
-          color: white;
-        }
-      }
-      &:before {
-        content: "<body>";
-        font-family: "La Belle Aurore", cursive;
-        color: #e55305;
-        font-size: 30px;
-        position: absolute;
-        left: -50px;
-        top: -100px;
-        opacity: 0.8;
-      }
-      &:after {
-        content: "</body>";
-        font-family: "La Belle Aurore", cursive;
-        color: #e55305;
-        font-size: 30px;
-        margin-right: 10px;
-        left: -50px;
-        bottom: -100px;
-        position: absolute;
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .image {
-    img {
-      width: 400px;
-      height: auto;
-      border-radius: 50%;
-      height: auto;
-    }
-  }
-`;
