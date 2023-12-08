@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 function ContactMe() {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 150 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: 300 }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
       className="h-screen max-w-6xl py-24 mx-auto space-y-32"
-      id="contactMe "
+      id="contactMe"
     >
       <h1 className="header">Contact Me</h1>
       <div className="container grid grid-cols-2 gap-y-12">

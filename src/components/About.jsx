@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section id="about" className="py-24 ">
+    <section id="about" className="h-[75vh] py-24">
       <div className="flex flex-col mx-auto text-2xl max-w-xxl gap-y-12">
         <h1 className="text-6xl text-center text-black opacity-70">About Me</h1>
         <p>

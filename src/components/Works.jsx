@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 function Works() {
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, ease: easeInOut }}
       className="py-12 section-height"
       id="works"
     >
