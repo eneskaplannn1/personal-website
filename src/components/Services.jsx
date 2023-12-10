@@ -27,21 +27,19 @@ function Services2() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2, ease: easeInOut }}
     >
-      <div className="py-12 mx-auto overflow-hidden max-w-[600px] lg:max-w-[1200px] xl:max-w-[1400px] ">
+      <div className="py-12 mx-auto overflow-hidden max-w-sx sm:max-w-lg lg:max-w-[1200px] xl:max-w-[1400px] ">
         <h1 className="mb-24 header">My Services</h1>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           breakpoints={{
-            800: {
+            0: {
               slidesPerView: 1,
             },
-            1524: {
+            1000: {
               slidesPerView: 2,
-              spaceBetween: 700,
             },
             1600: {
               slidesPerView: 3,
-              spaceBetween: 100,
             },
           }}
           pagination={{ clickable: true }}
@@ -50,16 +48,18 @@ function Services2() {
           {swiperContentList.map((el, i) => {
             return (
               <SwiperSlide
-                className="relative flex items-center justify-center overflow-visible icon-animation h-[650px] group"
+                className="relative flex items-center justify-center overflow-visible  icon-animation h-[650px] group"
                 key={i}
               >
-                <div className="bg-[#e6e6e6] rounded-full w-[400px] h-[400px] text-center flex flex-col p-16 py-12 gap-y-6 relative">
-                  <div className="flex flex-col items-center justify-center text-2xl icon">
+                <div className="bg-[#e6e6e6] rounded-full w-[250px] h-[250px]   sm:w-[400px] sm:h-[400px] text-center flex flex-col justify-center p-16 py-12 gap-y-2 sm:gap-y-5 relative">
+                  <div className="flex flex-col items-center justify-center text-md sm:text-2xl icon">
                     <el.icon />
                     <h4> {el.title}</h4>
                   </div>
-                  <div className="text-xl opacity-75">{el.description}</div>
-                  <div className="absolute inset-0 transition duration-500 w-[422px] left-[-11px] top-[-11px] h-[422px] group-hover:rounded-full group-hover:border-black group-hover:border-2 "></div>
+                  <div className="text-xs opacity-75 sm:text-xl">
+                    {el.description}
+                  </div>
+                  <div className=" xl:absolute xl:z-10 xl:inset-0 xl:transition xl:duration-500 xl:w-[422px] xl:left-[-11px] xl:top-[-11px] xl:h-[422px] xl:group-hover:rounded-full xl:group-hover:border-black xl:group-hover:border-2 "></div>
                 </div>
               </SwiperSlide>
             );
@@ -92,7 +92,8 @@ const swiperContentList = [
   {
     icon: IoCodeSlashOutline,
     title: "Web-site design",
-    description: " Boş bıraktım, çünkü orada bir açıklama yok.", // Boş bıraktım, çünkü orada bir açıklama yok.
+    description:
+      " I specialize in web design, showcasing my skills in creating user-friendly, aesthetic, and effective websites. ",
   },
   {
     icon: GiWireframeGlobe,

@@ -9,10 +9,11 @@ function Skills() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="mx-auto space-y-12 max-w-xxl"
+        viewport={{ once: true }}
+        className="max-w-xs mx-auto space-y-12 sm:max-w-md lg:max-w-3xl xl:max-w-6xl xxl:max-w-xxl "
       >
-        <h1 className="header">My Tech Stack</h1>
-        <div className="grid grid-cols-2 gap-x-24">
+        <h1 className="!text-5xl header">My Tech Stack</h1>
+        <div className="grid gap-24 xl:grid-cols-2 xxl:gap-x-8 ">
           <FrontEndTable />
           <BackendTable />
         </div>

@@ -8,21 +8,21 @@ import { motion } from "framer-motion";
 function FrontEndTable() {
   return (
     <div className="space-y-16">
-      <h4 className="flex items-center justify-center text-4xl text-center gap-x-2">
+      <h4 className="flex items-center justify-center text-3xl text-center sm:text-4xl gap-x-2">
         <BsBraces />
         My FrontEnd Stack
       </h4>
-      <motion.div className="grid grid-cols-3 gap-8">
+      <motion.div className="grid grid-cols-2 gap-8 md:grid-cols-3 ">
         {skillData.map((data, i) => {
           return (
             <motion.div
-              className="flex flex-col items-center justify-center w-48 h-48 space-y-2 bg-[#ddd] rounded-full"
+              className="flex flex-col items-center justify-center w-32 h-32 md:h-36 md:w-36  lg:w-48 lg:h-48  xl:w-36 xl:h-36 xxl:w-48 xxl:h-48 space-y-2 bg-[#ddd] rounded-full"
               key={i}
             >
               <div className="icon">
                 <data.icon color={data.color} />
               </div>
-              <div className="text-lg font-medium break-words">
+              <div className="text-base font-medium text-center break-words  xxl:text-lg">
                 {data.description}
               </div>
             </motion.div>
