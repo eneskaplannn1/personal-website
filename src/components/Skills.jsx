@@ -10,7 +10,7 @@ function Skills() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className="max-w-xs mx-auto space-y-12 sm:max-w-md lg:max-w-3xl xl:max-w-6xl xxl:max-w-xxl "
+        className="max-w-xs mx-auto space-y-12 sm:max-w-md lg:max-w-3xl xl:max-w-6xl xxl:max-w-xxl"
       >
         <h1 className="!text-5xl header">My Tech Stack</h1>
         <div className="grid gap-24 xl:grid-cols-2 xxl:gap-x-8 ">

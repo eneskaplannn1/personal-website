@@ -10,7 +10,7 @@ function About() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 2, ease: easeIn }}
         className="max-w-xs mx-auto space-y-16 text-xl text-black opacity-75 xl:max-w-4xl xl:text-2xl xxl:max-w-[1400px] xxl:text-2xl lg:max-w-2xl md:max-w-lg gap-y-12"
       >

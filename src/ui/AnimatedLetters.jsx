@@ -2,7 +2,7 @@ import { keyframes, styled } from "styled-components";
 
 const AnimatedLetters = ({ letterClass, strArray, idx }) => {
   return (
-    <StyledSpan className="text-3xl sm:text-3xl md:text-4xl xl:text-6xl">
+    <StyledSpan className="text-xl sm:text-3xl md:text-4xl xl:text-6xl">
       {strArray.map((char, i) => (
         <span key={char + i} className={`${letterClass} _${i + idx}`}>
           {char}

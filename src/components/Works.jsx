@@ -24,9 +24,13 @@ function Works() {
                   className="w-full h-full rounded-2xl group-hover:opacity-20 "
                   src={project.imageSrc}
                 />
-                <div className="card">
-                  <h3 className="text-3xl tracking-wider ">{project.title}</h3>
-                  <p className="py-4 text-xl ">{project.description}</p>
+                <div className="px-7 card">
+                  <h3 className="text-xl tracking-wider sm:text-2xl lg:text-3xl ">
+                    {project.title}
+                  </h3>
+                  <p className="py-4 text-md sm:text-xl ">
+                    {project.description}
+                  </p>
                   <a
                     className="block mx-auto bg-indigo-600 btn w-fit"
                     target="blank"

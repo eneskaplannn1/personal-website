@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .section-height {
+    min-height: 100vh;
+  }
+
+  .header {
+    @apply text-6xl text-center text-black opacity-70;
+  }
+
+  .icon svg {
+    @apply w-12 h-12 md:w-14 md:h-14 xl:w-12 xl:h-12 xxl:h-16 xxl:w-24;
+  }
+
+  .icon-animation:hover svg {
+    transition-duration: 1s;
+    transform: rotateY(360deg);
+  }
+
+  .card {
+    @apply hidden group-hover:block absolute w-full  items-center top-[50%]  text-center left-[50%] translate-x-[-50%] translate-y-[-50%] text-white;
+  }
+  .btn {
+    @apply px-8 py-4 text-xl font-bold text-white outline-none cursor-pointer rounded-xl;
+  }
+}
+:root {
+  --primary: #c95a1e;
+}
+
+.navbar-opacity a {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.navbar-opacity a:hover {
+  opacity: 1;
+}
+
+.navigation a {
+  @apply flex items-center justify-center w-16 h-16 text-white bg-[#bbb] shadow-md hover:shadow-2xl hover:text-primary  rounded-full;
+}
+.navigation a svg {
+  @apply text-2xl duration-200;
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.x {
+  color: red !important;
+}
