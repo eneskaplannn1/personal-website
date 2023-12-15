@@ -16,22 +16,22 @@ function ContactMe() {
       <h1 className="header">Contact Me</h1>
       <div className="container grid gap-y-12 xxl:grid-cols-2">
         <div>
-          <div className="flex items-center mb-10 text-3xl xxl:justify-center gap-x-4 ">
+          <div className="flex items-center mb-10 text-xl sm:text-3xl xxl:justify-center gap-x-4 ">
             <FiMessageCircle /> Talk to me
           </div>
-          <div className="grid text-xl gap-y-8">
-            <div className="grid text-2xl gap-y-3">
+          <div className="grid text-md gap-y-8">
+            <div className="grid text-lg sm:text-2xl gap-y-3">
               <div className="contact-data-title">Email</div>
               <div className="opacity-75 ">eneskaplannn1@gmail.com</div>
             </div>
-            <div className="grid text-2xl gap-y-3">
+            <div className="grid text-md sm:text-2xl gap-y-3">
               <div className="contact-data-title">Phone Number</div>
               <div className="opacity-75 ">+90 (551) 947 8837</div>
             </div>
           </div>
         </div>
         <div>
-          <div className="flex items-center mb-10 text-2xl sm:text-3xl xxl:justify-center gap-x-4">
+          <div className="flex items-center mb-10 text-xl sm:text-2xl lg:text-3xl xxl:justify-center gap-x-4">
             <RiSendPlaneLine /> Send me your project
           </div>
           <form className="relative grid space-y-8 h-fit ">

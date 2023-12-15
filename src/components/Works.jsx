@@ -5,7 +5,7 @@ function Works() {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1.5, ease: easeInOut }}
       className="py-12 section-height"
       id="works"

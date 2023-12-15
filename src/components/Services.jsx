@@ -23,7 +23,7 @@ function Services2() {
     <motion.section
       id="services"
       initial={{ opacity: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.4 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2, ease: easeInOut }}
     >
