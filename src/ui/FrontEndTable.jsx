@@ -4,6 +4,7 @@ import { DiCss3 } from "react-icons/di";
 import { SiStyledcomponents, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
+import { SiRedux } from "react-icons/si";
 
 function FrontEndTable() {
   return (
@@ -22,7 +23,7 @@ function FrontEndTable() {
               <div className="icon">
                 <data.icon color={data.color} />
               </div>
-              <div className="text-base font-medium text-center break-words  xxl:text-lg">
+              <div className="text-base font-medium text-center break-words xxl:text-lg">
                 {data.description}
               </div>
             </motion.div>
@@ -63,6 +64,11 @@ const skillData = [
     icon: TbBrandNextjs,
     color: "black",
     description: "NextJS",
+  },
+  {
+    icon: SiRedux,
+    color: "purple",
+    description: "Redux",
   },
 ];
 
