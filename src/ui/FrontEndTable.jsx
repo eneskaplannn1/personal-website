@@ -1,10 +1,15 @@
 import { BsBraces } from "react-icons/bs";
 import { FaHtml5, FaReact } from "react-icons/fa";
 import { DiCss3 } from "react-icons/di";
-import { SiStyledcomponents, SiTailwindcss } from "react-icons/si";
+import {
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiRedux,
+  SiTypescript,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
-import { SiRedux } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 
 function FrontEndTable() {
   return (
@@ -49,6 +54,16 @@ const skillData = [
     icon: FaReact,
     color: "53C1DE",
     description: "ReactJS",
+  },
+  {
+    icon: IoLogoJavascript,
+    color: "f0db4f",
+    description: "Javascript",
+  },
+  {
+    icon: SiTypescript,
+    color: "0050e8",
+    description: "TypeScript",
   },
   {
     icon: SiStyledcomponents,
