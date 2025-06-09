@@ -50,10 +50,22 @@ function Works() {
 
 const projects = [
   {
-    imageSrc: "eduprotrack.png",
-    title: "School Management System",
-    description: "ReactJS, NodeJS, MongoDB, ExpressJS",
-    link: "https://eduprotrack.netlify.app",
+    imageSrc: "ekofin.png",
+    title: "Ekofin - Stock Analysis",
+    description: "NextJS, Tailwind, TypeScript, .NET",
+    link: "https://ekofin.net/anasayfa",
+  },
+  {
+    imageSrc: "logo.png",
+    title: "Ekofin Mobile App",
+    description: "React Native, Expo, TypeScript",
+    link: "https://apps.apple.com/tr/app/ekofin-borsa-hisse-fon/id6502468053?l=tr",
+  },
+  {
+    imageSrc: "smartinfo.png",
+    title: "SmartInfo",
+    description: "NextJS, TypeScript, .NET",
+    link: "https://smartinfo.com.tr/",
   },
   {
     imageSrc: "tradehub3.png",

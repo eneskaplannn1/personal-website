@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import { DiMongodb, DiNodejs } from "react-icons/di";
+import { DiMongodb, DiNodejs, DiMsqlServer } from "react-icons/di";
 import { IoServerSharp } from "react-icons/io5";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiDotnet, SiPuppeteer } from "react-icons/si";
 import { LiaDocker } from "react-icons/lia";
 import { SiPostman } from "react-icons/si";
 
@@ -43,14 +43,29 @@ const skillData = [
     description: "NodeJS",
   },
   {
+    icon: SiDotnet,
+    color: "#512BD4",
+    description: "ASP.NET",
+  },
+  {
     icon: DiMongodb,
     color: "6BBF47",
     description: "MongoDB",
   },
   {
+    icon: DiMsqlServer,
+    color: "#CC2927",
+    description: "MSSQL",
+  },
+  {
     icon: SiExpress,
     color: "black",
     description: "Express js",
+  },
+  {
+    icon: SiPuppeteer,
+    color: "#00F0FF",
+    description: "Web Scraping",
   },
   {
     icon: LiaDocker,

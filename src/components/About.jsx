@@ -20,15 +20,17 @@ function About() {
           Engineering at college.
         </p>
         <p>
-          I specialize in creating web pages, focusing particularly on UI/UX. I
-          am dedicated to achieving successful outcomes in the projects I
-          deliver
+          I am a Full Stack and Mobile Developer with experience in building
+          various projects. I specialize in creating responsive web applications
+          and mobile apps, focusing particularly on UI/UX. I am dedicated to
+          delivering high-quality, scalable solutions that meet client needs.
         </p>
         <p>
-          I am honing my skills in a technology stack that includes JavaScript,
-          HTML, CSS, Node.js, MongoDB, Docker, and React. My passion for both
-          frontend and backend development comes together in successful
-          projects.
+          My technology stack includes TypeScript, NextJS, React, React Native,
+          Expo, Node.js, ASP.NET, MongoDB, MSSQL, and Docker. I have experience
+          in both frontend and backend development, as well as mobile app
+          development, web scraping, and database management, allowing me to
+          create comprehensive solutions across different platforms.
         </p>
         <h4 className="text-4xl">My links</h4>
         <div className="flex space-x-4 icon">

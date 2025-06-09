@@ -6,6 +6,8 @@ import {
   SiTailwindcss,
   SiRedux,
   SiTypescript,
+  SiExpo,
+  SiReact,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
@@ -41,14 +43,25 @@ function FrontEndTable() {
 
 const skillData = [
   {
-    icon: FaHtml5,
-    color: "E44D26",
-    description: "HTML5",
+    icon: SiTypescript,
+    color: "0050e8",
+    description: "TypeScript",
+  },
+
+  {
+    icon: TbBrandNextjs,
+    color: "black",
+    description: "NextJS",
   },
   {
-    icon: DiCss3,
-    color: "#3a2f9d",
-    description: "CSS",
+    icon: SiReact,
+    color: "#61DAFB",
+    description: "React Native",
+  },
+  {
+    icon: SiExpo,
+    color: "#000020",
+    description: "Expo",
   },
   {
     icon: FaReact,
@@ -61,14 +74,20 @@ const skillData = [
     description: "Javascript",
   },
   {
-    icon: SiTypescript,
-    color: "0050e8",
-    description: "TypeScript",
+    icon: SiRedux,
+    color: "purple",
+    description: "Redux",
+  },
+
+  {
+    icon: FaHtml5,
+    color: "E44D26",
+    description: "HTML5",
   },
   {
-    icon: SiStyledcomponents,
-    color: "#ff9e93",
-    description: "Styled Components",
+    icon: DiCss3,
+    color: "#3a2f9d",
+    description: "CSS",
   },
   {
     icon: SiTailwindcss,
@@ -76,14 +95,9 @@ const skillData = [
     description: "Tailwind",
   },
   {
-    icon: TbBrandNextjs,
-    color: "black",
-    description: "NextJS",
-  },
-  {
-    icon: SiRedux,
-    color: "purple",
-    description: "Redux",
+    icon: SiStyledcomponents,
+    color: "#ff9e93",
+    description: "Styled Components",
   },
 ];
 

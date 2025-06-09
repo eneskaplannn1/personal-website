@@ -73,42 +73,45 @@ function Services2() {
 const swiperContentList = [
   {
     icon: FaReact,
-    title: "Application Development with React",
+    title: "Full Stack Development",
     description:
-      "I have the ability to use React to create modern and user-friendly interfaces.",
+      "I develop modern web applications using React, Next.js, and TypeScript for frontend, and Node.js/ASP.NET for backend.",
   },
   {
     icon: RxComponent1,
-    title: "Component Based Development",
+    title: "Mobile App Development",
     description:
-      "I can create modular and reusable React components when developing applications.",
+      "I create cross-platform mobile applications using React Native and Expo, ensuring native performance and user experience.",
   },
   {
     icon: DiResponsive,
     title: "Responsive Design",
     description:
-      "I can create responsive designs suitable for mobile and desktop devices.",
+      "I implement responsive designs that work seamlessly across all devices, from mobile to desktop, using modern CSS frameworks.",
   },
   {
     icon: IoCodeSlashOutline,
-    title: "Web-site design",
+    title: "Web Development",
     description:
-      " I specialize in web design, showcasing my skills in creating user-friendly, aesthetic, and effective websites. ",
+      "I build modern, performant, and SEO-friendly websites using Next.js, TypeScript, and best practices in web development.",
   },
   {
     icon: GiWireframeGlobe,
-    title: "Designing RESTful API's",
-    description: "I am experienced in the development of RESTful APIs.",
+    title: "API Development",
+    description:
+      "I design and implement RESTful APIs using Node.js, Express, and ASP.NET, with proper documentation and security measures.",
   },
   {
     icon: GoDatabase,
-    title: "Database Management",
-    description: "I have the ability to work with databases like MongoDB.",
+    title: "Database Solutions",
+    description:
+      "I work with both SQL (MSSQL) and NoSQL (MongoDB) databases, implementing efficient data models and queries.",
   },
   {
     icon: HiOutlineServerStack,
-    title: "Design server-side Applications",
-    description: "I can develop server-side applications using Node.js.",
+    title: "Web Scraping & Automation",
+    description:
+      "I develop web scraping solutions and automation tools using Puppeteer and Cheerio for data extraction and processing.",
   },
 ];
 
