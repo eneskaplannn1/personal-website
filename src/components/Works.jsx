@@ -1,50 +1,63 @@
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Works() {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 1.5, ease: easeInOut }}
-      className="py-12 section-height"
-      id="works"
-    >
-      <div className="max-w-xs mx-auto space-y-24 sm:max-w-2xl lg:max-w-4xl xxl:max-w-6xl">
-        <h1 className="header">My Projects</h1>
+    <section id="works" className="section">
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="mb-16 text-4xl font-bold text-center md:text-5xl">
+            My Projects
+          </h2>
 
-        <div className="grid gap-16 lg:grid-cols-2 sm:place-items-center place-content-center">
-          {projects.map((project, i) => {
-            return (
-              <div
-                key={i}
-                className="flex w-[330px] h-[220px]  relative flex-col hover:shadow-2xl xxl:w-[480px] xxl:h-[320px]  sm:w-[480px] sm:h-[320px] lg:w-[400px] lg:h-[266px]  group hover:bg-gradient-to-r  from-gray-200 to-[#001b5e] rounded-2xl"
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="project-card"
               >
-                <img
-                  className="w-full h-full rounded-2xl group-hover:opacity-20 "
-                  src={project.imageSrc}
-                />
-                <div className="px-7 card">
-                  <h3 className="text-xl tracking-wider sm:text-2xl lg:text-3xl ">
+                <div className="mb-4">
+                  <img
+                    src={project.imageSrc}
+                    alt={project.title}
+                    className="object-cover mb-4 w-full h-48 rounded-lg"
+                  />
+                  <h3 className="mb-2 text-xl font-semibold">
                     {project.title}
                   </h3>
-                  <p className="py-4 text-md sm:text-xl ">
-                    {project.description}
-                  </p>
-                  <a
-                    className="block mx-auto bg-indigo-600 btn w-fit"
-                    target="blank"
-                    href={project.link}
-                  >
-                    More info
-                  </a>
+                  <p className="mb-4 text-gray-600">{project.description}</p>
+
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="text-sm skill-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center btn-secondary"
+                >
+                  View Project
+                </a>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 
@@ -52,50 +65,55 @@ const projects = [
   {
     imageSrc: "ekofin.png",
     title: "Ekofin - Stock Analysis",
-    description: "NextJS, Tailwind, TypeScript, .NET",
+    description:
+      "A comprehensive financial analysis platform for stock market data and insights.",
+    technologies: ["NextJS", "TypeScript", ".NET", "Tailwind"],
     link: "https://ekofin.net/anasayfa",
   },
   {
     imageSrc: "logo.png",
     title: "Ekofin Mobile App",
-    description: "React Native, Expo, TypeScript",
+    description:
+      "Mobile application for financial services and stock tracking.",
+    technologies: ["React Native", "Expo", "TypeScript"],
     link: "https://apps.apple.com/tr/app/ekofin-borsa-hisse-fon/id6502468053?l=tr",
+  },
+  {
+    imageSrc: "uptoraise.png",
+    title: "UpToRaise",
+    description:
+      "UpToRaise is a fullstack project that connects Investors and Entrepreneurs.",
+    technologies: ["React", "Vite", "Tailwind", ".NET", "MSSQL"],
+    link: "https://uptoraise.netlify.app/",
   },
   {
     imageSrc: "smartinfo.png",
     title: "SmartInfo",
-    description: "NextJS, TypeScript, .NET",
+    description: "Information management system with modern web interface.",
+    technologies: ["NextJS", "TypeScript", ".NET"],
     link: "https://smartinfo.com.tr/",
   },
   {
     imageSrc: "tradehub3.png",
-    title: "E-commerce Application",
-    description:
-      "ReactJS, NodeJS, Styled-Components, ReactRedux, ReactQuery, MongoDB, ExpressJS",
-
+    title: "E-commerce Platform",
+    description: "Full-featured e-commerce solution with modern UI/UX.",
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
     link: "https://tradehub-e-commerce.netlify.app/",
   },
   {
     imageSrc: "reactquiz.png",
-    title: "React Quiz Application",
-    description: "React, React Hooks",
+    title: "React Quiz App",
+    description: "Interactive quiz application built with React hooks.",
+    technologies: ["React", "React Hooks", "JavaScript"],
     link: "https://eneskaplan-react-quiz-app.netlify.app/",
   },
   {
     imageSrc: "foodhub.png",
     title: "FoodHub",
-    description: "React, React Hooks",
+    description: "Food delivery and restaurant discovery platform.",
+    technologies: ["React", "React Hooks", "CSS"],
     link: "https://eneskaplan-foodhub.netlify.app/",
   },
-  {
-    imageSrc: "personalwebsite.png",
-    title: "Personal Website",
-    description: "React, Tailwind, Framer Motion, Swiper, React Scrool",
-
-    link: "https://github.com/eneskaplannn1/personal-website",
-  },
 ];
-
-console.log(projects);
 
 export default Works;
