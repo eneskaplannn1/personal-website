@@ -38,7 +38,7 @@ function About() {
                     >
                       Ekofin
                     </a>
-                    • 2024 March - Present
+                    • Mar 2023 – May 2026
                   </p>
                   <p className="mt-2 text-gray-700">
                     Developing web applications and mobile apps using React,
@@ -58,7 +58,7 @@ function About() {
                   >
                     Ekofin Mobile App
                   </a>
-                  <p className="text-gray-600">Ekofin • 2024 March - Present</p>
+                  <p className="text-gray-600">Ekofin • Mar 2023 – May 2026</p>
                   <p className="mt-2 text-gray-700">
                     Built React Native mobile applications for financial
                     services with TypeScript and Expo.
@@ -153,16 +153,6 @@ function About() {
               >
                 <FaXTwitter size={24} />
                 Twitter
-              </a>
-            </div>
-
-            <div className="mt-8">
-              <a
-                href="/CV.pdf"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                Download Resume
               </a>
             </div>
           </div>

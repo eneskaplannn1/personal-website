@@ -79,12 +79,28 @@ const projects = [
     link: "https://apps.apple.com/tr/app/ekofin-borsa-hisse-fon/id6502468053?l=tr",
   },
   {
-    imageSrc: "uptoraise.png",
-    title: "UpToRaise",
+    imageSrc: "ehliyetim.png",
+    title: "Ehliyetim 2026",
     description:
-      "UpToRaise is a fullstack project that connects Investors and Entrepreneurs.",
-    technologies: ["React", "Vite", "Tailwind", ".NET", "MSSQL"],
-    link: "https://uptoraise.netlify.app/",
+      "A free driving-license exam preparation app with real questions, offline practice, and progress tracking.",
+    technologies: ["React Native", "Expo", "TypeScript", "Firebase"],
+    link: "https://ehliyetim2026.netlify.app/",
+  },
+  {
+    imageSrc: "dose-tracker.png",
+    title: "DoseTracker",
+    description:
+      "A private GLP-1 tracker for weekly shots, injection sites, weight, and side effects.",
+    technologies: ["React Native", "Expo", "TypeScript", "HealthKit"],
+    link: "https://dose-track.netlify.app/",
+  },
+  {
+    imageSrc: "animora.png",
+    title: "Animora",
+    description:
+      "A pet-care companion for daily routines, health tracking, walks, vaccines, and community.",
+    technologies: ["Next.js", "React", "Firebase", "CSS Modules"],
+    link: "https://getanimora.com/",
   },
   {
     imageSrc: "smartinfo.png",
